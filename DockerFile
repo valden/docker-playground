@@ -2,3 +2,16 @@ FROM python:3.6.5
 
 # author of file
 #LABEL maintainer=”Denys Valchuk <dvalchuk@gmail.com>”
+
+USER root
+# Install custom tools, runtime, etc.
+RUN apt-get update && apt-get install -y \
+    && apt install emacs \
+    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+
+USER gitpod
+# Apply user-specific settings
+ENV SOMEENV=bzzz
+
+# Give back control
+USER root
