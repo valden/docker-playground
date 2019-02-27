@@ -6,7 +6,7 @@ FROM python:3.6.5
 USER root
 # Install custom tools, runtime, etc.
 RUN apt-get update && apt-get install -y \
-    && apt install emacs \
+    emacs \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 USER gitpod
