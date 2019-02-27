@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.6.5
 
 # author of file
-LABEL maintainer=”Denys Valchuk <dvalchuk@gmail.com>”
+#LABEL maintainer=”Denys Valchuk <dvalchuk@gmail.com>”
