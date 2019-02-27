@@ -1,0 +1,4 @@
+FROM python:latest
+
+# author of file
+LABEL maintainer=”Denys Valchuk <dvalchuk@gmail.com>”
