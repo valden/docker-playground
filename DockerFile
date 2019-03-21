@@ -1,4 +1,4 @@
-FROM python:3.6.5
+FROM conanio/gcc72
 
 # author of file
 LABEL maintainer="Denys Valchuk <dvalchuk@gmail.com>"
